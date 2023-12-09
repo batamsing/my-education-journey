@@ -20,7 +20,6 @@ const cards = data.map(values => {
 })
 
 
-
 const App = () => {
   return (
     <div className='App'>
