@@ -1,0 +1,32 @@
+.card {
+    margin-top: 25px;
+    display: flex;
+    width: 700px;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;    
+    border-radius: 9px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card>img {
+    border-radius: 9px;
+    margin-right: 20px;
+    max-width: 350px;
+    height: auto;
+    
+}
+
+@media (max-width: 600px) {
+    .card {
+      width: 100%; /* Cards take full width on smaller screens */
+      flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+  
+    .card > img {
+      margin-right: 0; /* No margin on smaller screens */
+      margin-bottom: 10px; /* Add some space between image and text */
+      max-width: 100%; /* Make sure the image doesn't overflow its container */
+      height: auto;
+    }
+}
